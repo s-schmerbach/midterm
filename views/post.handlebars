@@ -1,0 +1,19 @@
+<div class="container">
+  <h1 class="mt-5 mb-5 text-center">Create a post</h1>
+  <form id="post" action="/profile/{{username}}" enctype="multipart/form-data">
+    <div class="mb-3 form-group">
+      <label for="image" class="form-label">Upload Image</label> <br>
+      <input type="file" name="image" id="image" required>
+    </div>
+    <div class="mb-3 form-group">
+      <label for="description" class="form-label">Description</label> <br>
+      <textarea name="description" id="description" cols="50" rows="5" required></textarea>
+    </div>
+    <div>
+      <input hidden type="text" name="username" id="username" value="{{username}}" required>
+    </div>
+    <button type="submit" id="add_submit" class="btn btn-primary">Submit<i class="fas fa-paper-plane"></i></button>
+    <button type="reset" class="btn btn-secondary">Clear</button>
+    <p class="text-div text-danger" id="error"></p>
+  </form>
+</div>

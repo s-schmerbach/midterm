@@ -1,0 +1,19 @@
+{
+  "debug": "DEBUG",
+  "http": {
+    "hostname": "HOSTNAME",
+    "port": "PORT"
+  },
+  "auth": {
+    "saltRounds": "SALT_ROUNDS",
+    "secret": "SECRET"
+  },
+  "db": {
+    "database": "DB_NAME",
+    "host": "DB_HOST",
+    "post": "DB_PORT",
+    "user": "DB_USER",
+    "password": "DB_PASS",
+    "connectionLimit": "DB_POOL"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "http": {
+    "hostname": "localhost",
+    "port": 3000
+  },
+  "auth": {
+    "saltRounds": 10,
+    "secret": "mySecret"
+  },
+  "db": {
+    "url": "mongodb+srv://Sprout:petRescue@cluster0.ueirr.mongodb.net/media?retryWrites=true&w=majority",
+    "name": "media",
+    "poolSize": 5
+  }
+}

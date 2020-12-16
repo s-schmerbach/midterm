@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="d-flex justify-content-between">
+  <a href="/" class="btn btn-primary mt-5" style="height: fit-content;"><i class="fas fa-arrow-left"></i> Back</a>
+  <h1 class="text-center p-5">Login to Sketchy</h1>
+  <a href="#"></a>
+  </div>
+  <form action="/login" method="post">
+    <div class="mb-3 form-group">
+      <label class="form-label" for="username">User Name</label>
+      <input class="form-control" type="text" name="username" id="username">
+    </div>
+    <div class="mb-3 form-group">
+      <label class="form-label" for="password">Password</label>
+      <input class="form-control" type="password" name="password" id="password">
+    </div>
+    <p class="text-danger text-center">{{err.message}}</p>
+    <div class="d-flex justify-content-center">
+      <button class="mt-3 btn btn-primary">Login  <i class="fas fa-sign-in-alt"></i></button>
+    </div>
+  </form>
+</div>

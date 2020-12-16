@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="d-flex justify-content-between">
+    <a href="/profile/{{user.username}}" id="back_btn" class="btn btn-primary mt-5" style="height: fit-content;"><i
+        class="fas fa-arrow-left"></i> Back</a>
+    <h1 class="text-center p-5">Edit User</h1>
+    <a href="#"></a>
+  </div>
+  <p class="text-center text-success" id="edited"></p>
+  <form id="edit" action="/profile/{{user.username}}">
+    <div class="mb-3 form-group">
+      <label class="form-label" for="username">User Name</label>
+      <input class="form-control" type="text" id="username" value="{{user.username}}" disabled>
+    </div>
+    <div class="mb-3 form-group">
+      <label class="form-label" for="password">Password</label>
+      <input class="form-control" type="password" name="password" id="password" value="{{user.password}}" required>
+    </div>
+    <div class="mb-3 form-group">
+      <label class="form-label" for="con_password">Confirm Password</label>
+      <input class="form-control" type="password" name="con_password" id="con_password" required>
+    </div>
+    <div class="mb-3 form-group">
+      <label class="form-label" for="email">Email</label>
+      <input class="form-control" type="email" name="email" id="email" value="{{user.email}}" required>
+    </div>
+    <input type="text" name="id" id="id" value="{{user._id}}" hidden>
+    <p class="text-danger text-center" id="error"></p>
+    <div class="d-flex justify-content-center">
+      <button id="edit_btn" class="mt-3 btn btn-primary">Edit <i class="fas fa-user"></i></button>
+    </div>
+  </form>
+</div>

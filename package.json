@@ -1,0 +1,29 @@
+{
+  "name": "midterm",
+  "version": "1.0.0",
+  "description": "midterm",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "nodemon": "nodemon -r dotenv/config server.js"
+  },
+  "author": "Sheridan Schmerbach",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "config": "^3.3.3",
+    "cookie-parser": "^1.4.5",
+    "debug": "^4.3.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "joi": "^17.3.0",
+    "joi-file-extensions": "^2.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongo": "^0.1.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2"
+  }
+}

@@ -1,0 +1,38 @@
+<div class="container bg-light">
+  <div class="pd-5 mt-5 mb-5 d-flex justify-content-between">
+    <h1><a href="#top" class="sticky">Sketchy</a></h1>
+    {{#if auth.username}}
+    <h1><a href="/profile/{{auth.username}}">Profile</a></h1>
+    {{else}}
+    <h1><a href="/login">Login</a></h1>
+    {{/if}}
+  </div>
+  <form id="search">
+    <div class="control-group">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span id="search_thing" class="input-group-text bg-dark text-light">Search by Username</span>
+        </div>
+        <input  id="searchBox" name="search" class="form-control" placeholder="Search..." type="text">
+        <button class="input-group-append btn btn-dark" type="search"><i class="fas fa-search"></i></button>
+        <a href="/feed" class="btn btn-primary">Clear</a>
+      </div>
+    </div>
+  </form>
+  <div class="pt-5 container">
+    <p id="top"></p>
+    <div class="row  justify-content-center">
+      {{#each post}}
+      <div class="m-5 col-12 " id="{{id}}">
+        <div class="card mt-3 m-auto" style="width: 75%;">
+          <img src="/images/{{image}}" class="card-img-top" alt="Post by {{username}}">
+          <div class="card-body">
+            <h5 class="card-title"><a href="/profile/{{username}}">{{username}}</a></h5>
+            <h6>{{description}}</h6>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
